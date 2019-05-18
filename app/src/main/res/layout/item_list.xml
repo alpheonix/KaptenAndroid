@@ -3,33 +3,71 @@
                                              xmlns:app="http://schemas.android.com/apk/res-auto"
                                              xmlns:tools="http://schemas.android.com/tools"
                                              android:layout_width="match_parent"
-                                             android:layout_height="wrap_content">
+                                             android:layout_height="88dp">
 
     <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@mipmap/ic_launcher"
-            android:id="@+id/imageView"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageView_avatar"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"/>
     <TextView
             android:text="TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView_item_name" app:layout_constraintStart_toEndOf="@+id/imageView"
-            android:layout_marginLeft="18dp" android:layout_marginStart="18dp" app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/textView_item_name"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:letterSpacing="0.19"
+            app:layout_constraintStart_toEndOf="@+id/imageView_avatar"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="16dp"/>
     <TextView
             android:text="TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView_item_pick" app:layout_constraintStart_toEndOf="@+id/imageView"
-            android:layout_marginLeft="18dp" android:layout_marginStart="18dp" android:layout_marginTop="12dp"
+            android:id="@+id/textView_item_pick"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="#818181"
+            android:lineSpacingExtra="2sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView_avatar"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="12dp"
             app:layout_constraintTop_toBottomOf="@+id/textView_item_name"/>
     <TextView
             android:text="TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView_item_drop" android:layout_marginLeft="54dp" android:layout_marginStart="54dp"
-            app:layout_constraintStart_toEndOf="@+id/textView_item_pick" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="46dp"/>
+            android:id="@+id/textView_item_drop"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="#818181"
+            android:lineSpacingExtra="2sp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            app:layout_constraintStart_toEndOf="@+id/textView_item_pick"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="48dp"/>
+    <ImageView
+            android:layout_width="17dp"
+            android:layout_height="10dp"
+            app:srcCompat="@drawable/arrow"
+            android:id="@+id/imageView2" app:layout_constraintStart_toEndOf="@+id/textView_item_pick"
+            android:layout_marginLeft="18dp" android:layout_marginStart="18dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView_item_drop" android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp" android:layout_marginTop="54dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 </android.support.constraint.ConstraintLayout>
